@@ -18,6 +18,8 @@
                  :h="item.h"
                  :i="item.i"
                  :key="item.i"
+                 ref="gridItem"
+                 :class="{'is-active': active}"
                  @click.native="handleClick(item.i)"
       >
         {{item.i}}
@@ -27,7 +29,9 @@
 </template>
 
 <script>
-  import VueGridLayout from 'vue-grid-layout'
+  // import VueGridLayout from 'vue-grid-layout'
+  import GridLayout from './GridLayout'
+  import GridItem from './GridItem'
 
   export default {
     name: 'grid',
@@ -48,9 +52,14 @@
         console.log(id)
       }
     },
+    computed: {
+      active () {
+        return true
+      }
+    },
     components: {
-      GridLayout: VueGridLayout.GridLayout,
-      GridItem: VueGridLayout.GridItem
+      GridLayout,
+      GridItem
     }
   }
 </script>
@@ -132,5 +141,9 @@
 
   .vue-grid-item.disable-userselect {
     user-select: none;
+  }
+
+  .is-active{
+    border-color: red !important;
   }
 </style>
