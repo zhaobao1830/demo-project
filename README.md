@@ -1,29 +1,8 @@
 # demo-project
 
-## Project setup
-```
-npm install
-```
+    存储各种demo的项目
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+##  GridDemo 类似于Gridster的栅格布局系统
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    https://jbaysolutions.github.io/vue-grid-layout/README-zh_CN.html
+    这是我自己写的一个demo 
